@@ -76,7 +76,7 @@ app.get('/topNewsData',(req, res) =>{
 
 // technology page api
 app.get('/technologyNews',(req, res) =>{
-  topNewsCollection.find({category:"1"})
+  topNewsCollection.find({category:"4"})
   .toArray((err, documents) =>{
     res.send(documents);
   })
