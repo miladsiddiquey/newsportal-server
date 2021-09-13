@@ -54,6 +54,7 @@ app.post('/addNews', (req, res) => {
 
     topNewsCollection.insertOne({name, title, category,shortDis, description, image})
     .then(result => {
+      console.log(result)
       fs.remove(filePath, error =>{
         if(error){
           console.log(error)
